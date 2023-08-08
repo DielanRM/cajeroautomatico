@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Atm</title>
+    </head>
+
+
+<body>
+    <header>
+        <h1 id="bienvenida"></h1>
+        
+        <p id="mostrar"><br></p>
+       
+    </header>
+
+    <div>
+        <form id="dep">
+            <label for="deposito">Aquí podrás realizar un deposito</label>
+            <input type="number" placeholder="Depositar" id="deposito">
+            <button type="submit">Depositar</button>
+        </form>
+
+        <form id="ret">
+            <label for="retirar">Aquí podrás realizar un retiro</label>
+            <input type="number" placeholder="Retirar" id="retiro">
+            <button type="submit">Retirar</button>
+        </form>
+
+        
+        <form id="consultar">
+            <label for="consultar">Consulta tu saldo</label>
+            <button type="submit">consultar</button>
+        </form>
+    </div>
+
+    <footer id="salir">
+        <button onclick="salir()" type="reset" class="salida">Salir</button>
+    </footer>
+
+<script src="./func.js"></script>
+</body>
+</html>

@@ -1,0 +1,114 @@
+*{
+    box-sizing: border-box;
+   
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(rgb(80, 168, 80), rgb(2, 44, 2));
+}
+
+header{
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 2% 10% 3% 10%;
+}
+
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: x-large;
+}
+
+div{
+  
+    display: flex;
+    width: 100vw;
+    height: 35vh;
+}
+
+form{
+
+    width: 50vw;
+    height: 50hv;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+input{
+    border: solid;
+    margin-top: .5rem;
+    border-color: gray;
+    border-radius: .5rem;
+    padding-left: 8%;
+    width: 40%;
+    height: 15%;
+}
+
+
+button{
+    margin-left: .8rem;
+    background-color: rgb(141, 141, 141);
+    margin-top: 1.8rem;
+    cursor: pointer;
+    border: none;
+    padding: 1rem .8rem;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    border-radius: .5rem;
+}
+
+button::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(30deg, rgb(1, 66, 1), rgb(22, 156, 22), rgb(54, 196, 54), rgb(179, 121, 51) ,rgb(1, 66, 1), rgb(22, 156, 22), rgb(54, 196, 54));
+    background-size: 800%;
+    border-radius: .3rem;
+    filter: blur(.8rem);
+    animation: glowing 15s linear;
+    animation-duration: infinite;
+}
+
+@keyframes glowing{
+    0%{
+        background-position: 0 0;
+    }
+    50%{
+        background-position: 400% 0;
+    }
+    100%{
+        background-position: 0 0;
+    }
+}
+
+footer{
+    width: 100vw;
+    height: 10vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.salida{
+    margin: 0 2rem 1.5rem;
+    padding:  .5rem;
+    font-size: medium;
+    color: rgb(124, 12, 12);
+}
