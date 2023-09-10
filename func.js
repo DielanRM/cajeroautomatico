@@ -58,7 +58,7 @@ function crearCuenta(){
     
     if(contrasena === contrasena2){
         window.location.href = "inicio.html"; 
-        localStorage.setItem("nombre",nvoUsuario);
+        localStorage.setItem("nombre1",nvoUsuario);
         localStorage.setItem("pass",contrasena);
         }
         else{
@@ -70,14 +70,16 @@ function crearCuenta(){
 
 //Variable global
 let nombre = localStorage.getItem("nombre");
+let nombre1 = localStorage.getItem("nombre1");
 let bienvenida = document.getElementById("bienvenida");
 var mostrar = document.getElementById("mostrar");
 
 
 // agrega nuevo usuario al arreglo
 let contra_sena = localStorage.getItem("pass");
-database.push({user: nombre, pass: contra_sena, saldo: 0});
+database.push({user: nombre1, pass: contra_sena, saldo: 0});///////////////////////////////////////////////////////////
 console.log(database);
+
 
 
 //texto de bienbenida
