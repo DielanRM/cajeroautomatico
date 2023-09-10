@@ -57,7 +57,7 @@ function crearCuenta(){
    
     
     if(contrasena === contrasena2){
-        window.location.href = "inicio.html"; 
+        window.location.href = "index.html"; 
         localStorage.setItem("nombre1",nvoUsuario);
         localStorage.setItem("pass",contrasena);
         }
